@@ -14,6 +14,8 @@
 		3C90F8B0200FF00A00D1F81C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C90F8AE200FF00A00D1F81C /* LaunchScreen.storyboard */; };
 		3C90F8BB200FF00A00D1F81C /* SwiftTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8BA200FF00A00D1F81C /* SwiftTableViewDemoTests.swift */; };
 		3C90F8C6200FF00A00D1F81C /* SwiftTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8C5200FF00A00D1F81C /* SwiftTableViewDemoUITests.swift */; };
+		3C90F8D4200FF14500D1F81C /* Root_TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8D3200FF14500D1F81C /* Root_TVC.swift */; };
+		3C90F8D6200FF2E700D1F81C /* FullMenu_TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8D5200FF2E700D1F81C /* FullMenu_TVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3C90F8C1200FF00A00D1F81C /* SwiftTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C90F8C5200FF00A00D1F81C /* SwiftTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTableViewDemoUITests.swift; sourceTree = "<group>"; };
 		3C90F8C7200FF00B00D1F81C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C90F8D3200FF14500D1F81C /* Root_TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root_TVC.swift; sourceTree = "<group>"; };
+		3C90F8D5200FF2E700D1F81C /* FullMenu_TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMenu_TVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				3C90F8AC200FF00A00D1F81C /* Assets.xcassets */,
 				3C90F8AE200FF00A00D1F81C /* LaunchScreen.storyboard */,
 				3C90F8B1200FF00A00D1F81C /* Info.plist */,
+				3C90F8D3200FF14500D1F81C /* Root_TVC.swift */,
+				3C90F8D5200FF2E700D1F81C /* FullMenu_TVC.swift */,
 			);
 			path = SwiftTableViewDemo;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C90F8A8200FF00A00D1F81C /* ViewController.swift in Sources */,
+				3C90F8D6200FF2E700D1F81C /* FullMenu_TVC.swift in Sources */,
+				3C90F8D4200FF14500D1F81C /* Root_TVC.swift in Sources */,
 				3C90F8A6200FF00A00D1F81C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N24V4NH8BJ;
 				INFOPLIST_FILE = SwiftTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dandylion.SwiftTableViewDemo;
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N24V4NH8BJ;
 				INFOPLIST_FILE = SwiftTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dandylion.SwiftTableViewDemo;
