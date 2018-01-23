@@ -266,7 +266,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Full Menu" id="gZc-sg-Qrf">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="423-sW-ryY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="423-sW-ryY">
+                            <connections>
+                                <action selector="saveButton:" destination="nXW-ET-kBZ" id="jQC-1E-ZrG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="sv5-vi-84d" kind="show" identifier="PieSegue" id="zua-zf-usS"/>
