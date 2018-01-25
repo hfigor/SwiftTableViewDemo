@@ -21,6 +21,7 @@
 		3C90F8DE20126C6500D1F81C /* PizzaMenu_TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8DD20126C6500D1F81C /* PizzaMenu_TVC.swift */; };
 		3C90F8E02017906A00D1F81C /* MenuItemSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8DF2017906A00D1F81C /* MenuItemSelectionDelegate.swift */; };
 		3C90F8E22017CCD100D1F81C /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C90F8E12017CCD100D1F81C /* OrderList.swift */; };
+		3C90F8E620190D8900D1F81C /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3C90F8E520190D8800D1F81C /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3C90F8DD20126C6500D1F81C /* PizzaMenu_TVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaMenu_TVC.swift; sourceTree = "<group>"; };
 		3C90F8DF2017906A00D1F81C /* MenuItemSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemSelectionDelegate.swift; sourceTree = "<group>"; };
 		3C90F8E12017CCD100D1F81C /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
+		3C90F8E520190D8800D1F81C /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		3C90F8A4200FF00A00D1F81C /* SwiftTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3C90F8E520190D8800D1F81C /* README.txt */,
 				3C90F8A5200FF00A00D1F81C /* AppDelegate.swift */,
 				3C90F8A9200FF00A00D1F81C /* Main.storyboard */,
 				3C90F8AC200FF00A00D1F81C /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 			files = (
 				3C90F8B0200FF00A00D1F81C /* LaunchScreen.storyboard in Resources */,
 				3C90F8AD200FF00A00D1F81C /* Assets.xcassets in Resources */,
+				3C90F8E620190D8900D1F81C /* README.txt in Resources */,
 				3C90F8AB200FF00A00D1F81C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

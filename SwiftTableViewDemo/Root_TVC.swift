@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Root_TVC: UITableViewController {
+class Root_TVC: UITableViewController, MenuItemSelectionDelegate {
     
     var orderList = OrderList()
     
@@ -48,7 +48,13 @@ class Root_TVC: UITableViewController {
         return cell
     }
    
-
+    // MARK: Delegates
+    
+    func didSelectMenuItem(controller: UITableViewController, order: OrderModel) {
+        orderList.addList(model: order)
+        controller.navigationController?.popViewController(animated: true)
+        tableView.reloadData()
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -84,14 +90,21 @@ class Root_TVC: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
+    
+    // MARK: - Navigation 
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // pg 330
         // Pass the selected object to the new view controller.
+        if segue.identifier == "OrderSegue"{
+            let vc = segue.destination as! FullMenu_TVC
+            vc.delegate = self
+            
+            let backItem = UIBarButtonItem() // from: https://stackoverflow.com/questions/28471164/how-to-set-back-button-text-in-swift
+            backItem.title = "Order"
+            navigationItem.backBarButtonItem = backItem
+        }
     }
-    */
+   
 
 }

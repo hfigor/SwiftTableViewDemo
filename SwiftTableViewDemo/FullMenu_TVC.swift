@@ -66,8 +66,9 @@ class FullMenu_TVC: UITableViewController, MenuItemSelectionDelegate { // Static
             vc.delegate = self
             vc.gotoSection = sections.Calzone.rawValue
         }
-        
-        /*   switch segue.identifier { // this will not work bc string equality utilizes grapheme comparison with == operator
+       
+        /*
+         switch segue.identifier! { //  string equality utilizes grapheme comparison with == operator
          case "PizzaSegue", "DeepDishSegue", "CalzoneSegue" :
          let vc = segue.destination as! PizzaMenu_TVC
          vc.delegate = self
@@ -76,7 +77,7 @@ class FullMenu_TVC: UITableViewController, MenuItemSelectionDelegate { // Static
          let vc = segue.destination as! PizzaMenu_TVC
          vc.delegate = self
          }
-         */
+        */
         
     }
 }
