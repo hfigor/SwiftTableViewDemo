@@ -43,6 +43,21 @@ class PizzaMenu_TVC: UITableViewController { // Dynamic Tables require data sour
         let section = indexPath.section
         let menuItem = menuItems.items[section][row]
         cell.textLabel?.text = menuItem
+        
+        // MARK: Multicolor rows
+         let rowCount = CGFloat(tableView.numberOfRows(inSection: indexPath.section))
+        let sectionCount = CGFloat(tableView.numberOfSections)
+        let currentRow = CGFloat(indexPath.row)
+        let currentSection = CGFloat(indexPath.section)
+        let hue = currentSection / sectionCount // divide current by max to yield number from 0 - 1
+        let saturation = 1.0 - currentRow / rowCount // divide current by max to yield number down from 1 - 0
+        cell.backgroundColor = UIColor(
+            hue: hue,
+            saturation: saturation,
+            brightness: 1.0,
+            alpha: 1.0)
+        
+        
         return cell
     }
     

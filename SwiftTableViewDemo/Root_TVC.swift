@@ -43,8 +43,22 @@ class Root_TVC: UITableViewController, MenuItemSelectionDelegate {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
+        // MARK: Alternate background colors pg 332
+        if indexPath.row % 2 == 1 { // odd row
+            cell.backgroundColor = UIColor(
+                red: 0.8,
+                green: 0.8,
+                blue: 1.0,
+                alpha: 1)
+        } else {
+            cell.backgroundColor = tableView.backgroundColor
+        }
+        
+        // MARK: Set up icons
        cell.textLabel?.text = orderList.list[indexPath.row].menuItem
-
+        let myString = String (format: "Item: %i", indexPath.row + 1)
+        cell.detailTextLabel?.text = String (format: "Item: %i", indexPath.row + 1) // pg 332
+        cell.imageView?.image = UIImage(named: "pizza bar icon")
         return cell
     }
    
